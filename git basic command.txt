@@ -30,5 +30,5 @@ git remote with github.com
 #git remote
 #git push -u origin master
 project download on github command
-#git clone 
+#git clone git@github.com:patwary88/hrm_project.git
 
