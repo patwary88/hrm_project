@@ -21,4 +21,12 @@ for adding git commit
 #git commit -m "comment"
 gitignore command for ignore file
 #touch .gitignore
+create git branch 
+# git branch branch_name
+git remote with github.com
+#git remote
+#git remote origin https://github.com/patwary88/core_php.git or
+# $ git remote set-url origin git@github.com:patwary88/hrm_project.git
+#git remote
+#git push -u origin master
 
