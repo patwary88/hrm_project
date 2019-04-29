@@ -29,4 +29,6 @@ git remote with github.com
 # $ git remote set-url origin git@github.com:patwary88/hrm_project.git
 #git remote
 #git push -u origin master
+project download on github command
+#git clone 
 
