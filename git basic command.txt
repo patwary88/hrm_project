@@ -1,0 +1,16 @@
+create file 
+# touch filename
+for repository initilize
+# git init
+#git user config 
+git config --global user.name 'patwary88'
+#git email config 
+git config --global user.email 'mainuddinpatwary1988@gmail.com'
+#git add for staging area by using the "git add" command and passing necessary options
+git add
+#git status
+git add all file
+#git add *.file_type
+
+
+
