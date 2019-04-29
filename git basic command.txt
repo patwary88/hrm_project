@@ -13,7 +13,12 @@ git add all file
 #git add *.file_type
 first git commit
 #git commit
-setting initial 
-esc for write mode
-:wq for  w is for "write" (save) and q is for "quit".
-You may need to hit escape before :wq to exit the insert mode
+#setting initial 
+#esc for write mode
+#:wq for  w is for "write" (save) and q is for "quit".
+#You may need to hit escape before :wq to exit the insert mode
+for adding git commit
+#git commit -m "comment"
+gitignore command for ignore file
+#touch .gitignore
+
