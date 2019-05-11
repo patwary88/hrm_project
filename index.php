@@ -26,13 +26,37 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+<script type="text/javascript">
+	function fun_login(){
+		var username = $('#username').val();
+		var password = $('#password').val();
+
+		var values = $('#login').serialize();
+		//console.log(values);
+		 $.ajax({
+		        url: "index_controller.php",
+		        type: "post",
+		        data: values ,
+		        success: function (response) {
+		           // you will get response from your php page (what you echo or print)                 
+
+		        },
+		        error: function(jqXHR, textStatus, errorThrown) {
+		           console.log(textStatus, errorThrown);
+		        }
+
+
+		    });
+
+	}
+</script>
 </head>
 <body>
 	
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-t-85 p-b-20">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" id="login" method="POST" action="javascript:fun_login();">
 					<span class="login100-form-title p-b-70">
 						Welcome
 					</span>
@@ -41,17 +65,17 @@
 					</span>
 
 					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">
-						<input class="input100" type="text" name="username">
+						<input class="input100" type="text" name="username" id="username">
 						<span class="focus-input100" data-placeholder="Username"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-50" data-validate="Enter password">
-						<input class="input100" type="password" name="pass">
+						<input class="input100" type="password" name="password" id="password">
 						<span class="focus-input100" data-placeholder="Password"></span>
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button class="login100-form-btn" type="submit">
 							Login
 						</button>
 					</div>
