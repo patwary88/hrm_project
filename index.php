@@ -37,8 +37,7 @@
 		        url: "index_controller.php",
 		        type: "post",
 		        data: values ,
-		        success: function (response) {
-		           // you will get response from your php page (what you echo or print)                 
+		        success: function (response) {             
 
 		        },
 		        error: function(jqXHR, textStatus, errorThrown) {
